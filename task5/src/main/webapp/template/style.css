@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:  'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+
+}
+
+.orange{
+    color: orange;
+    font-weight: bold;
+}
+
+.container{
+    padding: 0 4%;
+}
+
+.banner{
+    height: 200px;
+    background-color: orange;
+    background-image: url("../img/banner1.jpg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+}
+
+header nav {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-transform: capitalize;
+    font-weight: bold;
+    color: #fff;
+}
+
+header nav h1{
+    padding: 1em 0;
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+header nav ul a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s;
+    font-size: 14px;
+    padding: 1em;
+
+}
+
+
+nav ul a:hover , #current{
+    color: orange;
+}
+
+
+section{
+    min-height: 200px;
+}
+
+h2{
+    font-size: 14px;
+    margin: 20px 0;
+}
+
+p{
+    font-size: 12px;
+    line-height: 20px;
+    margin-bottom: 15px;
+}
+
+#error{
+    padding: 10px 0 10px 4%;
+    font-size: 12px;
+    background-color: #f2dede;
+    display: none;
+    color: #a94442;
+}
+
+.styled-form{
+    width: 70%;
+}
+
+.styled-form div{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+.styled-form label{
+    width: 30%;
+}
+
+.styled-form input{
+    width: 50%;
+}
+
+#btns-container{
+    justify-content: flex-end;
+}
+
+.styled-form label,  button{
+    font-weight: bold;
+    font-size: 12px;
+}
+
+button{
+    border: 3px solid #000;
+    padding: 10px;
+    cursor: pointer;
+    margin-left: 5px;
+    background-color: transparent;
+    color: #000;
+    min-width: 25%;
+
+}
+
+button:hover{
+    background-color: #000;
+    border-color: transparent;
+    color: orange;
+}
+
+form p button {
+    float: left;
+    min-width: 100px;
+    margin-left: 0;
+    margin-right: 5px;
+}
+.styled-table {
+    border-collapse: collapse;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table thead tr {
+    background-color: orange;
+    color: #ffffff;
+    text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 8px;
+}
+
+.styled-table a {
+    color: black;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid orange;
+}
+
+footer{
+    margin-top: 120px;
+    background-color: orange;
+    padding: 12px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.fa-trash{
+    padding-left: 15px  ;
+}
+
+ul.result{
+    list-style: none;
+}
+
+ul.result li{
+    padding-bottom: 10px;
+}
+@media only screen and (min-width: 700px) {
+    header nav {
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+
+    header nav  h1{
+        text-align: left;
+        width: auto;
+    }
+    .banner{
+        height: 300px;
+    }
+
+    .styled-form {
+        width: 40%;
+    }
+
+    .styled-form label, button{
+        font-size: 15px;
+    }
+
+    header nav ul a, header nav h1{
+        font-size: 18px;
+    }
+
+    .styled-table th,
+    .styled-table td {
+        padding: 12px 8px;
+    }
+    h2{
+        font-size: 18px;
+    }
+
+    p{
+        font-size: 17px;
+    }
+
+
+
+}
